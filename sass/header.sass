@@ -1,0 +1,26 @@
+@import "bourbon"
+@import "vars.sass"
+@import "app/libs/susy/sass/susy"
+@import "app/libs/breakpoint-sass/stylesheets/breakpoint"
+
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: "RobotoRegular", sans-serif
+	overflow-x: hidden
+
+.hidden
+	display: none
+
+
+.testing3
+	@include container(90%) 
+	&>div
+		text-align: center
+		@include span(4 of 12 inside)
+		@include breakpoint(max-width 900px)
+			@include span(6 of 12 inside)
+
