@@ -1,5 +1,11 @@
 $(function() {
 
+	$('#fullpage').fullpage({
+		anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+		menu: '#myMenu',
+		scrollBar: true
+	});
+
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {
