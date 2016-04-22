@@ -2,6 +2,8 @@
 @import "vars.sass"
 @import "app/libs/susy/sass/susy"
 @import "app/libs/breakpoint-sass/stylesheets/breakpoint"
+@import "susy"
+
 
 
 body
@@ -15,12 +17,22 @@ body
 .hidden
 	display: none
 
-
+//$main_layout: layout(12 .5 fluid float inside)
 .testing3
-	@include container(90%) 
+	+container(1170px) 
 	&>div
 		text-align: center
-		@include span(4 of 12 inside)
-		@include breakpoint(max-width 900px)
-			@include span(6 of 12 inside)
+		+span(4 of 12)
+		+breakpoint(max-width 900px)
+		 +span(6 of 12)
+
+// .testing3
+// 	@include container(80%)
+// 	&>div
+// 		text-align: center
+// 		@include span(4 of $main_layout)
+// 		@include breakpoint(max-width 900px)
+// 			@include span(6 of $main_layout)
+// 			&:nth-child(3)
+// 				@include full
 
