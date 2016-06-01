@@ -11,9 +11,12 @@
     "jQuery.equalHeights": "jquery.equalheights#^1.5.2",
     "owl.carousel": "^2.1.4",
     "superfish": "^1.7.9",
-    "page-scroll-to-id": "^1.5.4"
+    "page-scroll-to-id": "^1.5.4",
+    "magnific-popup": "^1.1.0"
   },
   "devDependencies": {
     "breakpoint-sass": "~2.5.0"
+  }
+}akpoint-sass": "~2.5.0"
   }
 }
